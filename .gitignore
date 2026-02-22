@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Engine runtime logs and local data
+engines/katago/logs/
+engines/katago/KataGoData/
+
+# Debug artifacts (runtime generated)
+debug/bug_log/
+debug/debug_log/
+debug/debug_script/
+debug/game_logs/
+
+# Internal documents (not for public repository)
+docs/design/
+docs/dev/
+docs/PROJECT_STATUS.md
+
+# Test coverage
+coverage/
+
+# Temporary files
+src/dir_scan_result.txt
+*.tmp
+*.bak

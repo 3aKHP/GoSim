@@ -1,0 +1,37 @@
+.control-panel {
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.control-card {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.control-card .ant-card-head {
+  min-height: 40px;
+  padding: 0 12px;
+}
+
+.control-card .ant-card-head-title {
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.control-card .ant-card-body {
+  padding: 12px;
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] .control-card {
+  background: #1f1f1f;
+  border-color: #303030;
+}
+
+[data-theme='dark'] .control-card .ant-card-head {
+  border-color: #303030;
+}

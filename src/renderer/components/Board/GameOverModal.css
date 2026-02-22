@@ -1,0 +1,134 @@
+.game-over-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.25s ease;
+}
+
+.game-over-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 40px;
+  min-width: 340px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+.game-over-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.game-over-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px;
+}
+
+.game-over-winner {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1890ff;
+  margin-bottom: 6px;
+}
+
+.game-over-detail {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.game-over-raw {
+  font-size: 13px;
+  color: #999;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 20px;
+}
+
+.game-over-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.game-over-btn {
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.game-over-btn:active {
+  transform: scale(0.97);
+}
+
+.game-over-btn.primary {
+  background: #1890ff;
+  color: #fff;
+}
+
+.game-over-btn.primary:hover {
+  background: #40a9ff;
+}
+
+.game-over-btn.secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.game-over-btn.secondary:hover {
+  background: #e0e0e0;
+}
+
+.game-over-btn.accent {
+  background: #52c41a;
+  color: #fff;
+}
+
+.game-over-btn.accent:hover {
+  background: #73d13d;
+}
+
+.game-over-toast {
+  margin-top: 12px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  animation: fadeIn 0.2s ease;
+}
+
+.game-over-toast.success {
+  background: #f6ffed;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+}
+
+.game-over-toast.error {
+  background: #fff2f0;
+  color: #ff4d4f;
+  border: 1px solid #ffccc7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

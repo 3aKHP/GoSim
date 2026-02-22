@@ -1,0 +1,19 @@
+.board-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] .board-grid line {
+  stroke: #333;
+}
+
+[data-theme='dark'] .board-grid circle {
+  fill: #333;
+}
+
+[data-theme='dark'] .board-grid text {
+  fill: #999;
+}

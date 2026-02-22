@@ -1,0 +1,108 @@
+.settings-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.game-settings,
+.ui-settings,
+.engine-settings {
+  padding: 16px 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.setting-description {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
+}
+
+.settings-description {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.settings-description p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.settings-description .hint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* 引擎设置 */
+.engine-setting-item {
+  margin-bottom: 24px;
+}
+
+.engine-info {
+  margin-bottom: 12px;
+}
+
+.engine-description {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.engine-detection {
+  margin-top: 24px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.engine-detection h4 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.detection-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detection-item:last-child {
+  border-bottom: none;
+}
+
+.engine-name {
+  font-weight: 500;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.engine-path {
+  font-size: 12px;
+  color: #999;
+  font-family: monospace;
+}
+
+/* 暗色主题适配 */
+[data-theme='dark'] .settings-description {
+  background: #1f1f1f;
+}
+
+[data-theme='dark'] .settings-description p {
+  color: #999;
+}
+
+[data-theme='dark'] .engine-detection {
+  background: #1f1f1f;
+}
+
+[data-theme='dark'] .detection-item {
+  border-bottom-color: #303030;
+}
+
+[data-theme='dark'] .setting-description {
+  color: #999;
+}
